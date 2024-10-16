@@ -21,6 +21,9 @@ export default function UploadAudioPage() {
         setFile(undefined)
     }
 
+    // Don't forget to clear the form after upload
+
+
     const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         setIsLoading(true)
 
@@ -51,13 +54,15 @@ export default function UploadAudioPage() {
             if (!res.ok) throw new Error(await res.text())
             setIsLoading(false)
             setSuccess(true)
+            clearForm() // Move clearForm() inside successful upload
         } catch (e: any) {
             // Handle errors here
             console.error(e)
             setSuccess(false)
         }
 
-        clearForm()
+        // clearForm() // Removed from here
+    
     }
 
     return (
@@ -66,7 +71,7 @@ export default function UploadAudioPage() {
                 Success!!!
             </div>}
             <div className={'flex flex-row gap-2'}>
-                <label htmlFor="title">歌名001</label>
+                <label htmlFor="title">歌名</label>
                 <input className={'px-1 song-name-field'} type="text"
                        onChange={(e) => setTitle(e.target.value)}
                        name={'title'} value={title}/>

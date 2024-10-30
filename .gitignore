@@ -17,35 +17,34 @@ coverage/
 Thumbs.db
 .nfs*
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-
-# Language and Framework Specific Files
+# Dependencies and Build Artifacts
 node_modules/
 .pnpm-store/
 dist/
-env/
-venv/
-vendor/
-cython_debug/
+
+# Logs, Temporary, and Backup Files
 *.log
 *.tmp
 *.bak
 *.old
 *.pid
 *.seed
+*.pid.lock
+
+# Environment and Configuration Files
 .env
 *.env.local
 *.env.development.local
 *.env.test.local
 *.env.production.local
+
+# JavaScript/TypeScript
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 *.tsbuildinfo
+
 **/__pycache__/
 *.py[cod]
 *.pyo
@@ -71,15 +70,7 @@ yarn-error.log*
 /build
 
 # misc
-.DS_Store
 *.pem
-
-# debug
-npm-debug.log*
-yarn-debug.log*
-
-# local env files
-.env*.local
 
 # vercel
 .vercel

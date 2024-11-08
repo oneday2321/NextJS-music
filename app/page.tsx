@@ -112,13 +112,13 @@ export default function Home() {
         <option value="multiply">Multiply</option>
         <option value="divide">Divide</option>
       </select>
-      <button 
+<button 
         id="calculateButton" onClick={handleCalculate}
         style={{ 
           padding: '10px 20px', 
           fontSize: '16px', 
           cursor: 'pointer', 
-          backgroundColor: 'green' 
+          backgroundColor: 'blue' 
         }}
       >
         Calculate
@@ -140,20 +140,20 @@ export default function Home() {
           onChange={(e) => setValue(e.target.value)} 
           style={{ marginBottom: '20px', padding: '5px', fontSize: '16px', width: '200px' }}
         />
-        <button 
+<button 
           type="submit" 
-          style={{ padding: '50px 100px', fontSize: '24px', cursor: 'pointer', backgroundColor: 'red' }}
+          style={{ padding: '50px 100px', fontSize: '24px', cursor: 'pointer', backgroundColor: 'blue' }}
         >
           redis send
         </button>
       </form>
-      <button 
+<button 
         onClick={handleRedirect} 
         style={{ 
           position: 'absolute', 
           bottom: '20px', 
           right: '20px', 
-          backgroundColor: 'black', 
+          backgroundColor: 'blue', 
           color: 'white', 
           padding: '10px 20px', 
           border: 'none', 

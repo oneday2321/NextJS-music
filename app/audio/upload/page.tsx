@@ -96,7 +96,7 @@ return (
                        }}/>
             </div>
             {isLoading && <div className={'animate-spin rounded-full h-10 w-10 border-b-2 border-gray-900'}></div>}
-            <input className={'bg-green-300 p-3 rounded-lg'} type="submit" value="Upload"/>
+            <input className={'bg-blue-300 p-3 rounded-lg'} type="submit" value="Upload"/>
         </form>
     )
 }    

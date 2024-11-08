@@ -27,3 +27,8 @@ button {
   padding: 8px; /* Add some padding inside the fields */
   border-radius: 4px; /* Slightly rounded corners */
 }
+
+/* New CSS class for black and white two-tone background */
+.two-tone-bg {
+  background: linear-gradient(to bottom, black, white);
+}

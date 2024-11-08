@@ -61,8 +61,8 @@ export default function Home() {
     (document.getElementById('result') as HTMLDivElement).innerText = `Result: ${result}`;
   };
 
-  return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', flexDirection: 'column', position: 'relative' }}>
+return (
+    <div className='dynamic-bg' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', flexDirection: 'column', position: 'relative' }}>
     <div style={{ position: 'absolute', top: '100px', left: '30px', textAlign: 'left', maxWidth: '3000px', fontSize: '14px', lineHeight: '1.5' }}>
         Music List Management:<br />
         GET /api/audio/list: Retrieves all music lists.<br />
@@ -72,7 +72,7 @@ export default function Home() {
         GET /api/audio: Retrieves all music details.<br />
         POST /api/audio: Handles file uploads for music tracks and cover images
     </div>
-    <div className="lyrics-section" style={{ position: 'absolute', top: '10px', right: '10px', backgroundColor: 'rgba(255, 255, 255, 0.8)', padding: '10px', borderRadius: '5px', boxShadow: '0 2px 10px rgba(0, 0, 0, 0.2)', textAlign: 'right', fontSize: '16px', lineHeight: '1.4' }}>
+<div className="lyrics-section" style={{ position: 'absolute', top: '10px', right: '10px', backgroundColor: 'rgba(0, 0, 0, 0.8)', color: 'white', padding: '10px', borderRadius: '5px', boxShadow: '0 2px 10px rgba(0, 0, 0, 0.2)', textAlign: 'right', fontSize: '16px', lineHeight: '1.4' }}>
         <h2 className="text-lg font-bold">青花瓷</h2>
         <p className="text-sm mt-2">
             素雅的青花瓷，<br />
@@ -85,6 +85,7 @@ export default function Home() {
         onClick={handleClick} 
         style={{ 
           backgroundColor: 'blue', 
+          color: 'white', 
           width: '180px', 
           height: '80px',
           fontSize: '18px',

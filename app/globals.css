@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 body {
-  background-color: purple;
+background: linear-gradient(270deg, #6A8326, #B7C01A, #E9E9A8);
+  background-size: 300% 300%;
+  animation: flow 5s linear infinite;
 }
 
 button {
@@ -44,4 +46,21 @@ button {
 /* Apply animation to text elements */
 .animated-text {
   animation: gradient-animation 3s ease infinite;
+}
+
+/* Background color transition animation */
+@keyframes bgTransition {
+  0% {
+    background-color: #6A8326;
+  }
+  50% {
+    background-color: #B7C01A;
+  }
+  100% {
+    background-color: #E9E9A8;
+  }
+}
+
+.dynamic-bg {
+  animation: bgTransition 10s infinite alternate;
 }

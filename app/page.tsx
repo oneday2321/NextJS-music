@@ -95,6 +95,17 @@ return (
       >
         Page Jump
       </button>
+<div style={{ 
+        position: 'absolute', 
+        bottom: '20px', 
+        left: '20px', 
+        backgroundColor: 'rgba(0, 0, 0, 0.5)', 
+        color: 'white', 
+        padding: '10px', 
+        borderRadius: '5px' 
+      }}>
+        你好
+      </div>
 <input 
         type="number" 
         id="value1" 
@@ -147,7 +158,7 @@ return (
         onClick={handleRedirect} 
         style={{ 
           position: 'absolute', 
-          bottom: '20px', 
+          bottom: '60px', 
           right: '20px', 
           backgroundColor: 'black', 
           color: 'white', 

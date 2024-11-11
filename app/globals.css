@@ -30,6 +30,11 @@ button {
   border-radius: 4px; /* Slightly rounded corners */
 }
 
+/* Modular Calculation Module Styles */
+.calculation-module {
+  @apply border-2 border-gray-500 p-4 bg-gray-100;
+}
+
 /* Gradient color changing animation */
 @keyframes gradient-animation {
   0% {

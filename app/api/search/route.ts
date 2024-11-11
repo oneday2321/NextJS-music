@@ -15,5 +15,11 @@ export async function GET(req: NextRequest) {
         return NextResponse.error()
     }
 
-    return NextResponse.json({msg: 'success', musics})
+    // Applying the new styles to modular calculation module
+    const styledMusics = musics.map(music => ({
+        ...music,
+        className: 'calculation-module'
+    }));
+
+    return NextResponse.json({msg: 'success', musics: styledMusics})
 }

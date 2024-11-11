@@ -99,13 +99,13 @@ return (
         type="number" 
         id="value1" 
         placeholder="Enter value 1" 
-        style={{ marginBottom: '20px', padding: '10px', fontSize: '18px', width: '250px' }}
+        className="mb-5 p-2 text-lg w-64 bg-gray-100 border border-gray-300 rounded-md"
       />
       <input 
         type="number" 
         id="value2" 
         placeholder="Enter value 2" 
-        style={{ marginBottom: '20px', padding: '10px', fontSize: '18px', width: '250px' }}
+        className="mb-5 p-2 text-lg w-64 bg-gray-100 border border-gray-300 rounded-md"
       />
 <select id="operation" style={{ marginBottom: '20px', padding: '10px', fontSize: '18px', width: '250px' }}>
         <option value="add">Add</option>
@@ -115,12 +115,7 @@ return (
 </select>
 <button 
         id="calculateButton" onClick={handleCalculate}
-        style={{ 
-          padding: '10px 30px', 
-          fontSize: '18px', 
-          cursor: 'pointer', 
-          backgroundColor: 'green' 
-        }}
+        className="p-5 text-lg cursor-pointer bg-green-500 text-white rounded-md"
       >
         Calculate
       </button>

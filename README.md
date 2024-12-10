@@ -19,3 +19,5 @@ install redis
 install mongo
 1234567
 12312321
+
+run_command: HOST=0.0.0.0 PORT=8080 npm run dev

@@ -1,6 +1,7 @@
 'use client';
 import { useRouter } from 'next/navigation';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import WelcomeModal from './components/WelcomeModal';
 
 export default function Home() {
   const router = useRouter();

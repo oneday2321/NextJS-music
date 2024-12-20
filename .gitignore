@@ -2,20 +2,3 @@
 .next/
 node_modules/
 .env
-.1024*
-!.1024
-.breakpoints
-# Clacky-related configuration
-
-# Language-specific files
-*.tsbuildinfo
-
-# Framework-related files
-out/
-dist/
-build/
-
-# Package manager directories
-npm-debug.log*
-yarn-error.log*
-pnpm-debug.log*

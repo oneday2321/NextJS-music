@@ -91,7 +91,7 @@ const calculateAverage = (num1, num2) => {
 <button 
         onClick={handleClick} 
         style={{ 
-          backgroundColor: 'blue', 
+          backgroundColor: 'lightblue', 
           width: '180px', 
           height: '80px',
           fontSize: '18px',
@@ -126,7 +126,7 @@ const calculateAverage = (num1, num2) => {
           padding: '10px 30px', 
           fontSize: '18px', 
           cursor: 'pointer', 
-          backgroundColor: 'green' 
+          backgroundColor: 'lightblue' 
         }}
       >
         Calculate
@@ -150,15 +150,15 @@ const calculateAverage = (num1, num2) => {
         />
 <button 
           type="submit" 
-          style={{ padding: '20px 40px', fontSize: '20px', cursor: 'pointer', backgroundColor: 'red', borderRadius: '5px', border: 'none' }}
+          style={{ padding: '20px 40px', fontSize: '20px', cursor: 'pointer', backgroundColor: 'lightblue', borderRadius: '5px', border: 'none' }}
         >
           Redis Send
         </button>
 </form>
-      <button 
+<button 
         onClick={() => router.push('/todo')} 
         style={{ 
-          backgroundColor: 'orange', 
+          backgroundColor: 'lightblue', 
           padding: '10px 20px', 
           fontSize: '18px', 
           cursor: 'pointer', 
@@ -167,13 +167,13 @@ const calculateAverage = (num1, num2) => {
       >
         Go to Todo
       </button>
-      <button 
+<button 
         onClick={handleRedirect} 
         style={{ 
           position: 'absolute', 
           bottom: '20px', 
           right: '20px', 
-          backgroundColor: 'black', 
+          backgroundColor: 'lightblue', 
           color: 'white', 
           padding: '10px 20px', 
           border: 'none', 

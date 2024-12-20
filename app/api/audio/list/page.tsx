@@ -1,4 +1,3 @@
-// app/audio/list/page.tsx
 "use client"
 import React, { useEffect, useState } from 'react';
 
@@ -20,7 +19,10 @@ const MusicListPage = () => {
             <h1>Uploaded Music List</h1>
             <ul>
                 {musics.map((music) => (
-                    <li key={music.id}>{music.title} by {music.singer}</li>
+                    <li key={music.id}>
+                        {music.title} by {music.singer}
+                        <button className="btn">Play</button>
+                    </li>
                 ))}
             </ul>
         </div>

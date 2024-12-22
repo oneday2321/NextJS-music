@@ -81,15 +81,14 @@ const calculateAverage = (num1, num2) => {
         backgroundSize: '600% 600%'
       }}>
 
-    <div className="lyrics-section" style={{ position: 'absolute', top: '10px', right: '10px', backgroundColor: 'rgba(255, 255, 255, 0.8)', padding: '10px', borderRadius: '5px', boxShadow: '0 2px 10px rgba(0, 0, 0, 0.2)', textAlign: 'right', fontSize: '16px', lineHeight: '1.4' }}>
-        <h2 className="text-lg font-bold"></h2>
-        <p className="text-sm mt-2">
-            素雅的青花瓷，<br />
-            悠远的情思，<br />
-            你的笑，藏着烟雨的霖。
-        </p>
+	<div className='clacky-intro' style={{ position: 'absolute', top: '10px', left: '10px', backgroundColor: 'rgba(255, 255, 255, 0.8)', padding: '10px', borderRadius: '5px', boxShadow: '0 2px 10px rgba(0, 0, 0, 0.2)', textAlign: 'left', fontSize: '16px', lineHeight: '1.4' }}>
+        Clacky是一个基于云的开发环境，提供便捷的协作开发功能。
     </div>
-      
+        <h2 className="text-lg font-bold">介绍</h2>
+        <p className="text-sm mt-2">
+            跟随Clacky，畅享无缝的开发体验。<br />
+            我们的目标是简化协作，提升效率。<br />
+        </p>
 <button 
         onClick={handleClick} 
         style={{ 

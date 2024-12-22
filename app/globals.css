@@ -1,9 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+        
 body {
   background-color: purple;
+  animation: background-gradient 5s ease infinite;
+  background: linear-gradient(270deg, red, yellow, blue);
+  background-size: 600% 600%;
+}
+
+/* Animation for background gradient */
+@keyframes background-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 button {

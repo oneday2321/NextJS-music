@@ -68,7 +68,7 @@ const calculateAverage = (num1, num2) => {
     return (num1 + num2) / 2;
 };
 
-    return (
+  return (
       <div style={{ 
         display: 'flex', 
         justifyContent: 'center', 
@@ -76,7 +76,9 @@ const calculateAverage = (num1, num2) => {
         height: '100vh', 
         flexDirection: 'column', 
         position: 'relative',
-        background: 'linear-gradient(to bottom, lightgreen, green, darkgreen)'
+        animation: 'background-gradient 5s ease infinite',
+        background: 'linear-gradient(270deg, red, yellow, blue)',
+        backgroundSize: '600% 600%'
       }}>
 
     <div className="lyrics-section" style={{ position: 'absolute', top: '10px', right: '10px', backgroundColor: 'rgba(255, 255, 255, 0.8)', padding: '10px', borderRadius: '5px', boxShadow: '0 2px 10px rgba(0, 0, 0, 0.2)', textAlign: 'right', fontSize: '16px', lineHeight: '1.4' }}>

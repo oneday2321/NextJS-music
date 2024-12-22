@@ -16,7 +16,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        <div style={{ position: 'absolute', bottom: '10px', left: '10px', fontSize: '12px', color: '#666' }}>
+          本系统为音频管理系统，提供音频上传与浏览功能。
+        </div>
+      </body>
     </html>
   )
 }

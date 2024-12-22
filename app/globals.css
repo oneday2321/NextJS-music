@@ -9,6 +9,14 @@ body {
   background-size: 600% 600%;
 }
 
+.system-description {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
 /* Animation for background gradient */
 @keyframes background-gradient {
   0% {

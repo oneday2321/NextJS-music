@@ -2,3 +2,27 @@
 .next/
 node_modules/
 .env
+
+# Clacky-related configuration
+.1024*
+!.1024
+.breakpoints
+
+# Language-specific files
+*.tsbuildinfo
+*.ts.hide
+*.js
+*.jsx
+*.js.map
+*.jsx.map
+
+# Framework-related files
+.build/
+out/
+.cache/
+
+# Package manager directories
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
